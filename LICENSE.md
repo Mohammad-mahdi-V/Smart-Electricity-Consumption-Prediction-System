@@ -1,132 +1,155 @@
-# Jupiter Code Non-Commercial License v1.0
+Jupiter Code Non-Commercial License v1.1
 
-**Project:** Smart Electricity Consumption Prediction System
-**Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri**
-**All Rights Reserved, except for the permissions expressly granted below.**
+Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri
+All Rights Reserved.
 
-## 1. Grant of Non-Commercial Permission
+1. Scope
 
-Subject to the terms and conditions of this License, permission is granted to any individual or organization to access, view, download, execute, copy, modify, and use the Software solely for **non-commercial purposes**, including:
+This license applies only to the original source code, documentation, original models, original configurations, and other materials in this repository that are created and owned by the Copyright Holder, unless otherwise stated.
 
-* Personal use;
-* Educational and academic use;
-* Non-commercial research;
-* Scientific experimentation;
-* Evaluation and testing;
-* Learning and study.
+Third-party libraries, frameworks, datasets, pretrained models, APIs, trademarks, and other external materials are NOT covered by this license and remain subject to their respective licenses and terms.
 
-Any use permitted under this License must comply with all other terms of this License.
+2. Copyright Ownership
 
-## 2. Commercial Use Prohibited
+The original materials covered by this license remain the property of the Copyright Holder.
 
-**Commercial use of the Software is strictly prohibited without prior written permission from the Copyright Holder.**
+No ownership, copyright, trademark, patent, or other intellectual property right is transferred to any user by this license.
 
-For the purposes of this License, "Commercial Use" includes, but is not limited to:
+All rights not expressly granted under this license are reserved by the Copyright Holder.
 
-1. Selling, licensing, renting, leasing, or otherwise monetizing the Software or any substantial portion of it;
-2. Incorporating the Software, or any substantial portion of it, into a commercial product or service;
-3. Using the Software as part of a paid application, platform, website, API, SaaS service, cloud service, or other revenue-generating service;
-4. Using the Software to provide services to customers or other third parties for monetary compensation;
-5. Using the Software within a business, company, or organization where such use is directly intended to generate commercial revenue or commercial advantage;
-6. Redistributing modified or unmodified versions of the Software as part of a commercial product or service;
-7. Using the Software, its models, algorithms, source code, or substantial derivative works to develop or operate a competing commercial product or service;
-8. Removing or circumventing the non-commercial restrictions of this License for the purpose of commercial exploitation.
+3. Permitted Non-Commercial Use
 
-**Commercial Use is permitted only after obtaining explicit written authorization from the Copyright Holder.**
+Permission is granted, free of charge, to use, study, execute, reproduce, modify, and adapt the covered materials for:
 
-## 3. Modification
+- personal use;
+- educational use;
+- academic use;
+- scientific and research purposes;
+- non-commercial demonstrations;
+- non-commercial experimentation;
+- participation in academic or scientific competitions and exhibitions.
 
-You may modify, adapt, translate, or otherwise create derivative works from the Software solely for permitted non-commercial purposes.
+Such use is permitted provided that the conditions of this license are respected.
 
-Modified versions must:
+4. Modification and Derivative Works
 
-* Clearly indicate that modifications have been made;
-* Retain this License;
-* Retain the original copyright notices;
-* Not be represented as the original Software or as an official release by Jupiter Code.
+You may modify or adapt the covered source code for permitted non-commercial purposes.
 
-Modification of the Software does **not** grant permission for commercial use.
+If you distribute a modified or derivative version of the covered materials, you must:
 
-## 4. Redistribution
+1. retain this license;
+2. retain existing copyright notices;
+3. clearly indicate that modifications were made;
+4. provide appropriate attribution to the original project and Copyright Holder.
 
-You may redistribute the original or modified Software solely for non-commercial purposes, provided that:
+You may not represent a modified version as the original work of the Copyright Holder.
 
-* This License is included with the distribution;
-* The original copyright and attribution notices are preserved;
-* The source of the Software is clearly identified;
-* You do not imply endorsement, sponsorship, or affiliation with Jupiter Code or the Copyright Holder;
-* No fee is charged specifically for the Software or for access to the Software, except for reasonable costs directly associated with physical distribution or hosting.
+5. Attribution
 
-Redistribution does not transfer or grant any commercial rights.
+When the covered materials are used substantially in a research project, academic work, presentation, publication, demonstration, competition entry, or derivative project, appropriate attribution must be provided.
 
-## 5. Attribution
+At minimum, attribution should identify:
 
-Any publication, presentation, academic work, research project, derivative work, or redistribution substantially based on this Software should provide reasonable attribution to:
+Smart Electricity Consumption Prediction System
+Jupiter Code / Mohammad Mahdi Vafri
 
-**Smart Electricity Consumption Prediction System**
-**Jupiter Code / Mohammad Mahdi Vafri**
+Where practical, a reference to the original repository should also be provided.
 
-Where technically practical, attribution should include a reference to the original repository.
+6. Commercial Use
 
-## 6. No Trademark Rights
+Commercial use of the covered materials is NOT permitted without prior written permission from the Copyright Holder.
 
-This License does not grant permission to use the names, logos, trademarks, service marks, or branding of **Jupiter Code**, **Smart Electricity Consumption Prediction System**, or the Copyright Holder, except where necessary to provide accurate attribution.
+For the purposes of this license, commercial use includes, but is not limited to:
 
-## 7. No Transfer of Ownership
+- selling the software or a derivative work;
+- incorporating the covered materials into a commercial product or service;
+- providing a paid SaaS or hosted service substantially based on the covered materials;
+- using the covered materials to provide paid services to customers;
+- licensing or sublicensing the covered materials for commercial purposes;
+- using the covered materials primarily for commercial advantage or monetary compensation.
 
-This License does not transfer ownership or copyright in the Software.
+A separate written commercial license may be granted by the Copyright Holder.
 
-All rights not expressly granted by this License are reserved by the Copyright Holder.
+7. Redistribution
 
-## 8. Third-Party Components
+Non-commercial redistribution of the original or modified covered materials is permitted only if:
 
-This License applies only to the original components of the Software owned by the Copyright Holder.
+- this license is included;
+- the original copyright notices are preserved;
+- the original authorship is properly attributed;
+- the redistribution is clearly identified as non-commercial.
 
-Third-party libraries, frameworks, datasets, models, dependencies, and other components included in or used by the Software remain subject to their respective licenses.
+You may not remove or alter copyright notices in a way that falsely suggests that you are the original author.
 
-Nothing in this License overrides or restricts rights granted by applicable third-party licenses.
+8. No Trademark License
 
-## 9. Commercial Licensing
+This license does not grant permission to use the names, logos, trademarks, service marks, or branding of:
 
-Organizations or individuals wishing to use the Software for commercial purposes may request a separate commercial license.
+- Jupiter Code;
+- Mohammad Mahdi Vafri;
+- Smart Electricity Consumption Prediction System;
 
-Commercial permission may be granted at the sole discretion of the Copyright Holder and may be subject to separate terms, conditions, and fees.
+except where such use is necessary for accurate attribution or identification of the original project.
 
-For commercial licensing inquiries, contact:
+9. Third-Party Components
 
-**Copyright Holder:** Mohammad Mahdi Vafri / Jupiter Code
-**Project:** Smart Electricity Consumption Prediction System
+This project may contain or depend upon third-party software, datasets, models, APIs, or other materials.
 
-## 10. Disclaimer of Warranty
+Such components remain governed by their own licenses and terms.
 
-THE SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR RELIABILITY.
+Nothing in this license is intended to restrict rights that users may independently have under applicable third-party licenses.
 
-THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS, OR OTHER LIABILITY ARISING FROM OR RELATED TO THE USE OF THE SOFTWARE, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
+Users are responsible for complying with the applicable licenses of third-party components.
 
-## 11. Limitation of Liability
+10. Data and Datasets
 
-To the maximum extent permitted by applicable law, the Copyright Holder shall not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of profits, revenue, data, business opportunities, or other economic losses arising from the use or inability to use the Software.
+Unless explicitly stated otherwise, datasets or data obtained from third parties are not owned by the Copyright Holder merely because they are used by this project.
 
-## 12. Termination
+The use, redistribution, modification, or publication of third-party datasets remains subject to the applicable dataset license and terms.
 
-Any permission granted under this License automatically terminates if you violate any of its terms.
+11. No Grant of Patent Rights
 
-Upon termination, you must immediately cease all use and redistribution of the Software, except where applicable law requires otherwise.
+This license does not grant any patent rights or patent licenses.
 
-Rights and obligations that by their nature should survive termination, including copyright, attribution, disclaimer, and limitation-of-liability provisions, shall survive termination.
+Any patent rights, if applicable, remain reserved by the respective rights holder.
 
-## 13. No Additional Restrictions
+12. Disclaimer
 
-You may not impose additional restrictions on the rights granted by this License in a manner that conflicts with its terms.
+THE COVERED MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, OR NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
 
-## 14. Reservation of Rights
+THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE COVERED MATERIALS, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
 
-Except for the limited non-commercial permissions expressly granted in this License, all rights, title, and interest in and to the Software remain exclusively with the Copyright Holder.
+13. Termination
 
-**Commercial exploitation of the Software without explicit written permission is not authorized.**
+Any permission granted under this license automatically terminates if you materially violate its terms.
+
+Upon termination, you must cease the use and redistribution of the covered materials, except to the extent that applicable law provides otherwise.
+
+Permissions properly granted before termination are not expanded by this clause.
+
+14. Applicable Law
+
+This license is intended to operate subject to applicable law.
+
+To the extent permitted by applicable law, the rights of the Copyright Holder in the covered software and original materials are reserved under the applicable intellectual property laws and regulations.
+
+Nothing in this license is intended to waive any non-waivable rights or protections available to the Copyright Holder under applicable law.
+
+15. Commercial Licensing
+
+For commercial licensing, partnership, enterprise use, or other uses outside the permissions granted by this license, contact the Copyright Holder for written authorization.
+
+Commercial permission is valid only when expressly granted in writing by the Copyright Holder.
+
+16. No Implied Permission
+
+Failure by the Copyright Holder to immediately enforce any provision of this license does not constitute a waiver of that provision or of any other rights.
+
+No permission should be inferred beyond the rights expressly granted in this license.
 
 ---
 
-**Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri. All Rights Reserved.**
-
-For permissions beyond the scope of this License, please contact the Copyright Holder.
+Project: Smart Electricity Consumption Prediction System
+Copyright Holder: Jupiter Code / Mohammad Mahdi Vafri
+License: Jupiter Code Non-Commercial License v1.1
+Copyright Year: 2026
