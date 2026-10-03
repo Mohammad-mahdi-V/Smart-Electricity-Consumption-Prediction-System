@@ -2,85 +2,73 @@
 
 Smart Electricity Consumption Prediction System
 
-<p>
-  <b>سگمنت‌بندی تطبیقی مبتنی بر رفتار • یادگیری ماشین • IoT • هوش انرژی</b>
-</p><p>
-  <a href="#فارسی">🇮🇷 فارسی</a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#english">🇬🇧 English</a>
-</p></div>---
+سگمنت‌بندی تطبیقی مبتنی بر رفتار • یادگیری ماشین • IoT • هوش انرژی
+
+<br><a href="#فارسی">🇮🇷 فارسی</a>
+  •  
+<a href="#english">🇬🇧 English</a>
+
+</div>---
 
 <a id="فارسی"></a>
 
 🇮🇷 فارسی
 
-📌 معرفی پروژه
+📌 معرفی
 
 سامانه هوشمند پیش‌بینی مصرف برق یک پروژه پژوهشی و محصول‌محور است که توسط Jupiter Code توسعه داده می‌شود.
 
-هدف پروژه ترکیب تحلیل رفتار مصرف‌کننده، سگمنت‌بندی تطبیقی، یادگیری ماشین و اندازه‌گیری واقعی برق برای توسعه یک سامانه کم‌هزینه و بومی در حوزه هوش انرژی است.
+هدف پروژه، ترکیب تحلیل رفتار مصرف‌کننده، سگمنت‌بندی تطبیقی، یادگیری ماشین و اندازه‌گیری واقعی برق برای توسعه یک سامانه کم‌هزینه، بومی و قابل استفاده در محیط واقعی است.
 
 اجزای اصلی
 
-حوزه| توضیح
-⚡ پیش‌بینی| پیش‌بینی مصرف برق در افق‌های مختلف
-🧠 سگمنت‌بندی| تقسیم تطبیقی پروفایل مصرف بر اساس رفتار
-👥 خوشه‌بندی| شناسایی گروه‌های رفتاری کاربران
-📊 تحلیل داده| تحلیل سری زمانی و استخراج ویژگی
-🤖 یادگیری ماشین| استفاده از مدل‌های ML برای پیش‌بینی
-📡 IoT| اندازه‌گیری واقعی ولتاژ و جریان
-🔄 سازگاری| واکنش به تغییرات الگوی مصرف
+- ⚡ پیش‌بینی مصرف برق
+- 🧠 سگمنت‌بندی تطبیقی مبتنی بر رفتار
+- 👥 خوشه‌بندی کاربران
+- 📊 تحلیل سری زمانی
+- 🤖 یادگیری ماشین
+- 📡 اندازه‌گیری واقعی برق با IoT
+- 🔄 سازگاری با تغییرات الگوی مصرف
 
 «مصرف برق فقط یک سیگنال عددی نیست؛ بلکه بازتابی از رفتار مصرف‌کننده است.»
 
 ---
 
-🎯 چشم‌انداز و هدف پروژه
+🎯 هدف پروژه
 
 ما نمی‌خواهیم این سامانه صرفاً به‌عنوان یک ایده پژوهشی باقی بماند.
 
-هدف پروژه، توسعه یک سامانه واقعی، کم‌هزینه و بومی برای پایش و پیش‌بینی مصرف برق است که بتواند از داده‌های واقعی برق استفاده کرده و در محیط واقعی مورد استفاده قرار گیرد.
+هدف، توسعه یک سامانه واقعی، کم‌هزینه و بومی برای اندازه‌گیری، تحلیل و پیش‌بینی مصرف برق است.
 
-تمرکز فعلی پروژه روی تکمیل و یکپارچه‌سازی اجزای اصلی سامانه است:
+پروژه هم‌زمان روی الگوریتم، پیش‌بینی، اندازه‌گیری و یکپارچه‌سازی کار می‌کند تا فاصله میان پژوهش و نمونه قابل استفاده کوتاه باشد.
 
-بخش| هدف
-🧠 سگمنت‌بندی تطبیقی| توسعه و ارزیابی الگوریتم رفتارمحور
-🤖 پیش‌بینی مصرف| بهبود و ارزیابی مدل‌های پیش‌بینی
-👥 خوشه‌بندی کاربران| استخراج الگوهای رفتاری
-📡 اندازه‌گیری واقعی| توسعه نمونه سخت‌افزاری کم‌هزینه
-💻 سامانه نرم‌افزاری| یکپارچه‌سازی اجزای سامانه
-🚀 محصول| آماده‌سازی برای استفاده واقعی
+مسیر توسعه
 
-مسیر پروژه
+پژوهش و الگوریتم
+       ↓
+اعتبارسنجی روی داده واقعی
+       ↓
+نمونه یکپارچه
+       ↓
+محصول کم‌هزینه
 
-Research & Algorithm
-        │
-        ▼
-Benchmark & Validation
-        │
-        ▼
-Integrated Prototype
-        │
-        ▼
-Low-Cost Product
-
-بنابراین فاصله پروژه تا محصول به‌عنوان یک مسیر طولانی و جداگانه تعریف نشده است؛ نمونه اولیه، الگوریتم، بخش نرم‌افزاری و بخش اندازه‌گیری در حال توسعه هم‌زمان هستند تا مستقیماً به یک سامانه قابل استفاده تبدیل شوند.
+این مسیر به معنای شروع محصول از صفر نیست؛ بخش‌های اصلی سامانه از جمله الگوریتم سگمنت‌بندی، مدل پیش‌بینی و نمونه اندازه‌گیری در حال توسعه و یکپارچه‌سازی هستند.
 
 ---
 
 🧠 سگمنت‌بندی تطبیقی مبتنی بر رفتار
 
-مسئله اصلی
+مسئله چیست؟
 
-یکی از اولین ایده‌هایی که هنگام فکر کردن به سگمنت‌بندی مصرف برق به ذهن می‌رسد، کاهش واریانس درون سگمنت‌ها است.
+یکی از اولین ایده‌هایی که در سگمنت‌بندی مصرف برق به ذهن می‌رسد، کاهش واریانس درون سگمنت‌ها است.
 
 این ایده از نظر مفهومی به روش‌هایی مانند Fisher–Jenks Natural Breaks نزدیک است.
 
-در روش Jenks، روز ۲۴ ساعته به چهار بخش پیوسته تقسیم می‌شود تا پراکندگی درون بخش‌ها کاهش پیدا کند و مرزها پس از محاسبه ثابت باقی می‌مانند.
+در روش Jenks، روز ۲۴ ساعته به چهار بخش پیوسته تقسیم می‌شود تا پراکندگی درون بخش‌ها کمینه شود و مرزها پس از محاسبه ثابت باقی می‌مانند.
 
-اما برای مسئله ما این کافی نبود.
+اما این برای مسئله ما کافی نبود.
 
-ما نمی‌خواستیم سامانه فقط پاسخ دهد:
+ما نمی‌خواستیم سامانه فقط بگوید:
 
 «کجا واریانس کمتر است؟»
 
@@ -88,102 +76,106 @@ Low-Cost Product
 
 «رفتار مصرف‌کننده کجا واقعاً تغییر می‌کند و آیا این تغییر پایدار و تکرارشونده است؟»
 
-به همین دلیل، روش پروژه از یک رویکرد صرفاً مبتنی بر پراکندگی به سمت یک رویکرد تطبیقی و رفتارمحور توسعه داده شده است.
+به همین دلیل، روش پروژه از یک رویکرد صرفاً مبتنی بر واریانس به سمت یک رویکرد تطبیقی و رفتارمحور توسعه داده شده است.
 
 ---
 
-🔄 فرایند سگمنت‌بندی
+🔄 ایده روش پیشنهادی
 
-سامانه برای هر روز از پنجره ۳۰ روز قبل استفاده می‌کند و مرزهای سگمنت‌ها را به‌صورت روزانه محاسبه می‌کند.
+برای هر روز، فقط از ۳۰ روز قبل استفاده می‌شود.
 
-مرحله| عملیات
-1| ساخت پروفایل ساعتی مصرف
-2| استفاده از Weighted Median
-3| وزن‌دهی بیشتر به روزهای اخیر
-4| هموارسازی پروفایل
-5| شناسایی تغییرات رفتاری
-6| بررسی شدت و پایداری تغییر
-7| اعمال محدودیت طول سگمنت
-8| ایجاد چهار سگمنت پیوسته
-9| محاسبه مجدد مرزها در هر روز
+فرایند کلی:
+
+داده ۳۰ روز گذشته
+        ↓
+Weighted Median
+        ↓
+پروفایل رفتاری ساعتی
+        ↓
+Smoothing
+        ↓
+تحلیل تغییرات
+        ↓
+ارزیابی پایداری تغییر
+        ↓
+اعمال محدودیت سگمنت
+        ↓
+۴ سگمنت پیوسته
 
 پارامترهای فعلی
 
 پارامتر| مقدار
 تعداد سگمنت| ۴
-حداقل طول سگمنت| ۴ ساعت
-حداکثر طول سگمنت| ۷ ساعت
+حداقل طول| ۴ ساعت
+حداکثر طول| ۷ ساعت
 پنجره تاریخی| ۳۰ روز
 به‌روزرسانی مرزها| روزانه
 
----
-
-📐 پروفایل رفتاری
-
-برای توجه بیشتر به رفتارهای جدیدتر، از وزن‌دهی کاهشی استفاده می‌شود:
-
-[
-w \propto 0.97^{age}
-]
-
-ساختار پردازش:
-
-ورودی| پردازش| خروجی
-داده تاریخی| وزن‌دهی زمانی| داده وزن‌دار
-داده وزن‌دار| Weighted Median| پروفایل ساعتی
-پروفایل ساعتی| Smoothing| پروفایل پایدارتر
-پروفایل| Change Analysis| تغییرات رفتاری
-تغییرات| Constraints| مرز سگمنت‌ها
-
-هدف این طراحی ایجاد تعادل میان:
-
-- واکنش به تغییرات جدید رفتار
-- مقاومت در برابر نویز و مشاهدات غیرعادی
+مرزها هر روز دوباره محاسبه می‌شوند و از رفتار اخیر کاربر تأثیر می‌گیرند.
 
 ---
 
-📊 داده و روش ارزیابی
+📐 وزن‌دهی به رفتار اخیر
 
-Benchmark فعلی روی داده واقعی Smart Meter London انجام شده است.
+برای اینکه رفتار روزهای اخیر اهمیت بیشتری داشته باشد:
+
+w ∝ 0.97^age
+
+یعنی با افزایش فاصله زمانی، وزن مشاهده کاهش پیدا می‌کند.
+
+هدف این طراحی ایجاد تعادل میان دو عامل است:
+
+- واکنش سریع‌تر به تغییر رفتار
+- مقاومت در برابر نویز و مشاهده‌های غیرعادی
+
+---
+
+📊 داده و ارزیابی
+
+Benchmark فعلی با داده واقعی Smart Meter London انجام شده است.
 
 ویژگی| مقدار
 Dataset| Smart Meter London
-تعداد خانوار| ۱۰۰۰
-بازه زمانی| دسامبر ۲۰۱۲ تا دسامبر ۲۰۱۳
-نوع تقسیم| زمانی
+خانوار| ۱۰۰۰
+بازه| دسامبر ۲۰۱۲ تا دسامبر ۲۰۱۳
+تقسیم| زمانی
 آموزش| ۸۰٪
 آزمون| ۲۰٪
-افق پیش‌بینی| Day 1 / Day 2 / Day 3
-استراتژی پیش‌بینی| Direct Forecasting
+افق‌ها| Day 1 / Day 2 / Day 3
+استراتژی| Direct Forecasting
 
-تقسیم آموزش و آزمون زمانی است و ۲۰٪ پایانی داده‌ها برای آزمون استفاده شده‌اند.
+۲۰٪ پایانی داده‌ها برای آزمون استفاده شده‌اند.
 
-چرا ۸۰/۲۰؟
+چرا تقسیم ۸۰/۲۰؟
 
-بخش| سهم| کاربرد
-Training| ۸۰٪| آموزش مدل
-Test| ۲۰٪| ارزیابی روی آینده دیده‌نشده
+در سری‌های زمانی، ترتیب زمانی داده اهمیت دارد.
 
-در مسئله پیش‌بینی سری زمانی، تقسیم زمانی از تقسیم تصادفی مناسب‌تر است، زیرا مدل باید از گذشته یاد بگیرد و روی داده‌های آینده ارزیابی شود.
+گذشته                                      آینده
+
+|------------- 80% -------------|---- 20% ---->
+          Training                    Test
+
+بنابراین داده‌ها به‌صورت تصادفی Shuffle نشده‌اند.
+
+مدل از گذشته یاد می‌گیرد و روی بخش آینده‌ای که در آموزش ندیده است ارزیابی می‌شود.
 
 ---
 
 🤖 مدل پیش‌بینی
 
-مدل اصلی فعلی پروژه:
+مدل اصلی فعلی:
 
 Random Forest
 
-در Benchmark فعلی، یک Random Forest سراسری با دو روش سگمنت‌بندی مقایسه شده است.
+در Benchmark فعلی، یک Random Forest سراسری با روش‌های مختلف سگمنت‌بندی مقایسه شده است.
 
-ویژگی| مقدار
-مدل اصلی| Random Forest
-Horizon 1| Day 1
-Horizon 2| Day 2
-Horizon 3| Day 3
-Strategy| Direct Forecasting
+افق‌های بررسی‌شده:
 
-بر اساس نتایج Benchmark، Random Forest به‌عنوان روش اصلی پروژه انتخاب شده است.
+- Day 1
+- Day 2
+- Day 3
+
+بر اساس نتایج فعلی، Random Forest به‌عنوان مدل اصلی نگه داشته شده است.
 
 ---
 
@@ -196,84 +188,92 @@ Day 1| 18.31%| 18.34%| 0.856| 0.857| 25.28%
 Day 2| 20.28%| 20.26%| 0.782| 0.774| 25.31%
 Day 3| 21.36%| 21.36%| 0.605| 0.692| 25.42%
 
-نتایج Benchmark نشان می‌دهند که عملکرد دو روش در WAPE بسیار نزدیک است؛ تفاوت اصلی در برخی شرایط سخت‌تر و در پایداری مدل مشاهده می‌شود.
+در Day 1 و Day 2، WAPE دو روش بسیار نزدیک است.
 
-در تحلیل پروژه، سگمنت‌بندی تطبیقی به دلیل حفظ عملکرد رقابتی و رفتار بهتر در برخی شرایط دشوار، در کنار Random Forest نگه داشته شده است.
+در Day 3، تفاوت بیشتری در R² مشاهده می‌شود. مستندات پروژه همچنین پایداری متفاوت دو روش را در دستگاه‌های سخت‌تر بررسی کرده‌اند.
 
-عملکرد روی دستگاه‌های سخت‌تر
+دستگاه‌های سخت‌تر
 
 Horizon| Adaptive WAPE| Jenks WAPE| Adaptive R²| Jenks R²
 Day 1| 24.64%| 23.73%| 0.837| 0.870
 Day 2| 32.08%| 31.16%| 0.482| 0.418
-Day 3| 37.21%| 33.95%| 0.824| 0.023
+Day 3| 37.21%| 33.95%| 0.824| -0.023
 
-این بخش برای بررسی رفتار روش‌ها روی دستگاه‌های پرت یا دارای سابقه کوتاه ارائه شده است.
+این بخش مربوط به دستگاه‌های پرت یا دارای سابقه کوتاه‌تر است.
+
+«هدف این Benchmark ادعای برتری مطلق یک روش در تمام معیارها نیست؛ بلکه بررسی عملکرد و پایداری سگمنت‌بندی تطبیقی در شرایط مختلف است.»
 
 ---
 
 👥 خوشه‌بندی کاربران
 
-پس از بررسی نتایج، خوشه‌بندی کاربران نیز به پروژه اضافه و با حالت بدون خوشه مقایسه شده است.
+در کنار سگمنت‌بندی روزانه، رفتار کاربران نیز با روش‌های خوشه‌بندی بررسی شده است.
 
-وضعیت فعلی
+نتیجه فعلی:
 
-شاخص| مقدار
-دستگاه‌های خوشه‌بندی‌شده| ۹۴۸
-دستگاه‌های پرت| ۵۲
-تعداد خوشه| K = 2
+- ۹۴۸ دستگاه خوشه‌بندی‌شده
+- ۵۲ دستگاه پرت
+- ۲ خوشه اصلی
 
-دو الگوی اصلی شناسایی شده‌اند:
+دو الگوی اصلی گزارش شده‌اند:
 
-خوشه| تعداد دستگاه| WAPE تقریبی
-منظم| ۶۲۶| حدود ۱۵٪ تا ۱۷٪
-پرنوسان| ۳۲۱| حدود ۲۴٪ تا ۲۸٪
+- 🟢 خوشه منظم: ۶۲۶ دستگاه
+- 🟠 خوشه پرنوسان: ۳۲۱ دستگاه
+
+WAPE تقریبی خوشه منظم حدود ۱۵ تا ۱۷ درصد و خوشه پرنوسان حدود ۲۴ تا ۲۸ درصد گزارش شده است.
 
 ---
 
-🔬 اثر خوشه‌بندی بر مدل‌ها
+🔬 اثر خوشه‌بندی روی مدل
 
-اثر خوشه‌بندی به الگوریتم پیش‌بینی وابسته است.
+اثر خوشه‌بندی به مدل پیش‌بینی وابسته است.
 
-Model| Day 1| Day 2| Day 3
+مدل| Day 1| Day 2| Day 3
 Ridge| +79.8%| +66.0%| +31.2%
-Random Forest| −1.1%| −1.2%| −0.8%
+Random Forest| -1.1%| -1.2%| -0.8%
 
-نتایج نشان می‌دهند که خوشه‌بندی برای مدل‌های مختلف اثر یکسانی ندارد. در مستندات پروژه، اثر قابل‌توجه خوشه‌بندی برای Ridge و اثر محدودتر آن برای Random Forest گزارش شده است.
+این نتایج نشان می‌دهند که خوشه‌بندی الزاماً برای تمام مدل‌ها اثر یکسانی ندارد.
+
+در نتیجه، خوشه‌بندی به‌عنوان یک ابزار تحلیلی و قابل توسعه در معماری پروژه باقی می‌ماند.
 
 ---
 
 🏗️ معماری سامانه
 
-برای اینکه README در GitHub روی دسکتاپ و موبایل مرتب نمایش داده شود، معماری اصلی به‌صورت جدول ارائه می‌شود:
+معماری اصلی پروژه به شکل زیر است:
 
-لایه| وظیفه
-📥 Data| دریافت داده مصرف
-🧹 Preprocessing| آماده‌سازی داده
-🧠 Adaptive Segmentation| استخراج ساختار رفتاری
-👥 User Clustering| گروه‌بندی کاربران
-📊 Feature Engineering| استخراج ویژگی
-🤖 Random Forest| پیش‌بینی
-📈 Evaluation| ارزیابی عملکرد
-
-جریان اصلی سامانه
-
-Data
-  ↓
-Preprocessing
-  ↓
-Adaptive Segmentation
-  ↓
-Feature Engineering
-  ↓
-Random Forest
-  ↓
-Consumption Forecast
-
-تحلیل رفتاری
-
-Adaptive Segmentation
-        ├── Behavioral Profile
-        └── User Clustering
+                 ┌─────────────────┐
+                 │  Electricity    │
+                 │      Data       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ Preprocessing   │
+                 └────────┬────────┘
+                          │
+                          ▼
+              ┌───────────────────────┐
+              │ Adaptive Segmentation │
+              └───────────┬───────────┘
+                          │
+                 ┌────────┴────────┐
+                 │                 │
+                 ▼                 ▼
+          User Clustering    Feature Engineering
+                 │                 │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │  Random Forest  │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ Consumption     │
+                 │   Forecast      │
+                 └─────────────────┘
 
 ---
 
@@ -281,43 +281,53 @@ Adaptive Segmentation
 
 پروژه در کنار بخش نرم‌افزاری، نمونه اولیه اندازه‌گیری واقعی برق را نیز توسعه داده است.
 
-قطعه| نقش
-ESP32| پردازش و ارتباط
-CT Clamp| اندازه‌گیری جریان
-B101ZMPT| اندازه‌گیری ولتاژ
-Wi-Fi| انتقال داده
+اجزای اصلی
 
-در نسخه جدید، ولتاژ واقعی نیز در کنار جریان نمونه‌برداری می‌شود تا محاسبه توان واقعی به شرایط شبکه نزدیک‌تر باشد.
+- ESP32
+- CT Clamp
+- B101ZMPT
+- Wi-Fi
 
----
+در نسخه جدید، ولتاژ و جریان به‌صورت همزمان نمونه‌برداری می‌شوند. در نتیجه امکان محاسبه موارد زیر فراهم شده است:
 
-⚡ اندازه‌گیری برق
+- RMS Voltage
+- RMS Current
+- Real Power
+- Apparent Power
+- Power Factor
 
-پارامترهای اندازه‌گیری
-
-پارامتر| خروجی
-RMS Voltage| "Vrms"
-RMS Current| "Irms"
-Real Power| "W"
-Apparent Power| "VA"
-Power Factor| "PF"
-
-در نسخه اولیه ولتاژ حدود ۲۳۰ ولت فرض می‌شد؛ در نسخه جدید سنسور ولتاژ B101ZMPT اضافه شده و ولتاژ و جریان به‌صورت همزمان نمونه‌برداری می‌شوند.
+افزودن B101ZMPT برای رفع فرض ثابت بودن ولتاژ و نزدیک‌تر شدن اندازه‌گیری به شرایط واقعی شبکه انجام شده است.
 
 ---
 
-📡 مسیر داده سخت‌افزار
+⚡ مسیر اندازه‌گیری
 
-مرحله| Component| خروجی
-1| ⚡ شبکه برق| سیگنال برق
-2| CT Clamp| جریان
-3| B101ZMPT| ولتاژ
-4| ESP32| پردازش محلی
-5| Wi-Fi| انتقال داده
-6| Server| دریافت داده
-7| AI / Forecasting| تحلیل و پیش‌بینی
+Electricity Grid
+       │
+       ├──────────────┐
+       ▼              ▼
+   CT Clamp       B101ZMPT
+    Current         Voltage
+       │              │
+       └──────┬───────┘
+              ▼
+            ESP32
+              │
+              ▼
+        Local Processing
+              │
+              ▼
+             Wi-Fi
+              │
+              ▼
+            Server
+              │
+              ▼
+       AI / Forecasting
 
-نمونه پیام
+ولتاژ، جریان، توان واقعی، توان ظاهری و ضریب توان محاسبه می‌شوند. داده‌ها در نمونه فعلی هر ۱۰ ثانیه به سرور ارسال می‌شوند.
+
+نمونه داده
 
 {
   "current_A": 2.145,
@@ -327,25 +337,42 @@ Power Factor| "PF"
   "power_factor": 0.976
 }
 
-بسته داده طبق مستندات پروژه هر ۱۰ ثانیه به سرور ارسال می‌شود.
+---
+
+🔧 تغییر مهم سخت‌افزار
+
+در نسخه اولیه، ولتاژ حدود ۲۳۰ ولت فرض می‌شد.
+
+در نسخه جدید:
+
+- سنسور ولتاژ B101ZMPT اضافه شده است.
+- ولتاژ واقعی اندازه‌گیری می‌شود.
+- ولتاژ و جریان همزمان نمونه‌برداری می‌شوند.
+- توان واقعی محاسبه می‌شود.
+- توان ظاهری محاسبه می‌شود.
+- ضریب توان محاسبه می‌شود.
+
+این تغییر در پاسخ به مسئله ثابت فرض کردن ولتاژ انجام شده است.
 
 ---
 
-🎯 Research → Product
+🎯 از پژوهش تا محصول
 
-پروژه با نگاه Research-to-Product توسعه داده می‌شود، اما مسیر محصول عمداً کوتاه نگه داشته شده است:
+پروژه با رویکرد Research-to-Product توسعه داده می‌شود.
 
-وضعیت| تمرکز
-🔬 Research| توسعه روش
-🧪 Benchmark| اعتبارسنجی روی داده واقعی
-🔧 Prototype| تکمیل نمونه عملی
-🚀 Product| یکپارچه‌سازی و استفاده واقعی
+Research
+   ↓
+Benchmark
+   ↓
+Integrated Prototype
+   ↓
+Low-Cost Product
+
+تمرکز اصلی اکنون روی تکمیل و یکپارچه‌سازی اجزای موجود است، نه ایجاد یک مسیر طولانی و جداگانه برای رسیدن به محصول.
 
 هدف نهایی
 
-یک سامانه هوشمند، کم‌هزینه و بومی برای اندازه‌گیری، تحلیل و پیش‌بینی مصرف برق.
-
-هدف این نیست که پروژه سال‌ها در مرحله تحقیق باقی بماند؛ بخش پژوهشی مستقیماً برای تکمیل نمونه عملی و نزدیک شدن به محصول قابل استفاده به کار گرفته می‌شود.
+«توسعه یک سامانه هوشمند، کم‌هزینه و بومی برای اندازه‌گیری، تحلیل و پیش‌بینی مصرف برق.»
 
 ---
 
@@ -354,14 +381,15 @@ Power Factor| "PF"
 ⚡ پیش‌بینی
 
 - [ ] بهبود دقت Day 1
-- [ ] توسعه مدل‌های اختصاصی برای Day 2 و Day 3
-- [ ] مقایسه مدل‌های مختلف
-- [ ] بررسی Direct و Horizon-Specific Forecasting
+- [ ] توسعه مدل اختصاصی Day 2
+- [ ] توسعه مدل اختصاصی Day 3
+- [ ] مقایسه الگوریتم‌های پیش‌بینی
+- [ ] بررسی Horizon-Specific Forecasting
 
 🧠 سگمنت‌بندی
 
-- [ ] بهبود تشخیص تغییرات رفتاری
-- [ ] بررسی معیارهای پایداری
+- [ ] بهبود تشخیص تغییر رفتار
+- [ ] بهبود معیار پایداری
 - [ ] بررسی رفتار فصلی
 - [ ] بررسی تعداد سگمنت‌های تطبیقی
 
@@ -369,21 +397,21 @@ Power Factor| "PF"
 
 - [ ] مقایسه روش‌های بیشتر
 - [ ] تشخیص بهتر کاربران پرنوسان
-- [ ] توسعه مدل‌های تخصصی گروه‌ها
+- [ ] توسعه مدل‌های اختصاصی گروه‌ها
 
 📡 سخت‌افزار
 
 - [ ] بهبود کالیبراسیون
-- [ ] مقایسه با ابزارهای مرجع
+- [ ] مقایسه با ابزار مرجع
 - [ ] افزایش قابلیت اطمینان
 - [ ] بهبود طراحی فیزیکی
 - [ ] کاهش هزینه ساخت
 
-🚀 یکپارچه‌سازی محصول
+🚀 محصول
 
-- [ ] اتصال کامل سخت‌افزار و مدل پیش‌بینی
+- [ ] تکمیل اتصال سخت‌افزار و مدل
 - [ ] توسعه داشبورد
-- [ ] اتصال پایدار Backend و دستگاه
+- [ ] تکمیل Backend
 - [ ] تست میدانی
 - [ ] آماده‌سازی نسخه قابل استفاده
 
@@ -391,13 +419,18 @@ Power Factor| "PF"
 
 ⚠️ محدودیت‌های فعلی
 
-محدودیت| توضیح
-رفتار کاربران| الگوهای مصرف متفاوت هستند
-کاربران پرنوسان| پیش‌بینی دشوارتر است
-Day 2 / Day 3| نیازمند توسعه بیشتر
-Clustering| اثر آن به مدل پیش‌بینی وابسته است
-Hardware| نیازمند کالیبراسیون و اعتبارسنجی
-Dataset| تمام الگوهای مصرف ممکن را پوشش نمی‌دهد
+پروژه همچنان در حال توسعه است.
+
+محدودیت‌های فعلی:
+
+- رفتار مصرف کاربران متفاوت است.
+- کاربران پرنوسان دشوارتر پیش‌بینی می‌شوند.
+- Day 2 و Day 3 نیازمند توسعه بیشتر هستند.
+- اثر خوشه‌بندی به مدل پیش‌بینی وابسته است.
+- سخت‌افزار نیازمند کالیبراسیون و اعتبارسنجی دقیق است.
+- Dataset مورد استفاده نماینده تمام الگوهای مصرف ممکن نیست.
+
+این موارد بخشی از مسیر تحقیق و توسعه فعلی پروژه هستند.
 
 ---
 
@@ -405,18 +438,13 @@ Dataset| تمام الگوهای مصرف ممکن را پوشش نمی‌دهد
 
 ««فقط چیزی را که اندازه‌گیری آن آسان است بهینه نکن؛ چیزی را مدل کن که واقعاً اهمیت دارد.»»
 
-واریانس یک معیار مهم است، اما واریانس به‌تنهایی لزوماً رفتار مصرف‌کننده را توصیف نمی‌کند.
+ایده اصلی پروژه این است که واریانس به‌تنهایی برای توصیف رفتار مصرف‌کننده کافی نیست.
 
-رویکرد پروژه ترکیبی از:
+بنابراین پروژه ترکیبی از:
 
-حوزه| نقش
-Statistics| تحلیل پراکندگی
-Behavior| شناخت رفتار مصرف
-Adaptation| واکنش به تغییرات
-Machine Learning| پیش‌بینی
-IoT| اندازه‌گیری واقعی
+Statistics + Behavior + Adaptation + Machine Learning + Real Measurement
 
-است.
+را دنبال می‌کند.
 
 ---
 
@@ -440,9 +468,11 @@ Jupiter Code — Aparat
 
 https://www.aparat.com/jupyter_code
 
+در این کانال، ویدیوی جدید پروژه و مقایسه نمودارهای نتایج نیز منتشر شده است.
+
 ---
 
-📜 استناد
+📜 Citation
 
 در صورت استفاده قابل‌توجه از پروژه در مقاله، پژوهش، ارائه، مسابقه، پروژه دانشگاهی یا پروژه مشتق‌شده، لطفاً به پروژه استناد دهید:
 
@@ -451,25 +481,30 @@ Jupiter Code / Mohammad Mahdi Vafri»
 
 ---
 
-⚖️ Copyright / License
+⚖️ Copyright & License
 
 Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri
 
-این پروژه تحت:
+این پروژه تحت مجوز:
 
 Jupiter Code Non-Commercial License v1.1
 
 منتشر شده است.
 
-نوع استفاده| وضعیت
-استفاده شخصی| ✅ مجاز طبق شرایط مجوز
-آموزشی| ✅ مجاز طبق شرایط مجوز
-دانشگاهی| ✅ مجاز طبق شرایط مجوز
-علمی| ✅ مجاز طبق شرایط مجوز
-پژوهشی| ✅ مجاز طبق شرایط مجوز
-استفاده تجاری| ⚠️ نیازمند اجازه کتبی
+استفاده‌های مجاز
 
-استفاده تجاری شامل، اما محدود به موارد زیر نیست:
+- استفاده شخصی
+- استفاده آموزشی
+- استفاده دانشگاهی
+- استفاده علمی
+- استفاده پژوهشی
+- سایر استفاده‌های غیرتجاری مجاز طبق شرایط License
+
+استفاده تجاری
+
+استفاده تجاری نیازمند اجازه کتبی صاحب حق است، مگر اینکه تحت یک مجوز تجاری جداگانه مجاز شده باشد.
+
+این موارد شامل، اما محدود به موارد زیر نیست:
 
 - محصولات تجاری
 - خدمات پولی
@@ -478,7 +513,7 @@ Jupiter Code Non-Commercial License v1.1
 - صدور مجوز تجاری
 - ادغام در سامانه‌های تجاری
 
-کتابخانه‌ها، دیتاست‌ها، مدل‌های ازپیش‌آموزش‌دیده، APIها و سایر اجزای شخص ثالث تابع مجوزهای مربوط به خود هستند.
+کتابخانه‌ها، Datasetها، مدل‌های ازپیش‌آموزش‌دیده، APIها و سایر اجزای شخص ثالث تابع مجوزهای مربوط به خود هستند.
 
 متن کامل مجوز:
 
@@ -492,9 +527,15 @@ Jupiter Code Team
 
 Smart Electricity Consumption Prediction System
 
-© 2026 Jupiter Code / Mohammad Mahdi Vafri
+Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri
 
 ---
+
+<div align="center">⚡ Research → Prototype → Product
+
+Adaptive Intelligence for Electricity Consumption
+
+</div>---
 
 <a id="english"></a>
 
@@ -504,127 +545,117 @@ Smart Electricity Consumption Prediction System
 
 Smart Electricity Consumption Prediction System is a research-to-product project developed by Jupiter Code.
 
-The project combines consumer behavior analysis, adaptive segmentation, machine learning, and real electricity measurement to develop a low-cost and locally developed energy-intelligence system.
+The project combines consumer behavior analysis, adaptive segmentation, machine learning, and real electricity measurement to develop a low-cost, locally developed, and practical energy-intelligence system.
 
 Core Components
 
-Area| Description
-⚡ Forecasting| Electricity consumption forecasting
-🧠 Segmentation| Behavior-aware adaptive segmentation
-👥 Clustering| Behavioral user grouping
-📊 Data Analysis| Time-series analysis and feature extraction
-🤖 Machine Learning| ML-based forecasting
-📡 IoT| Real electricity measurement
-🔄 Adaptation| Response to changing consumption patterns
+- ⚡ Electricity consumption forecasting
+- 🧠 Behavior-aware adaptive segmentation
+- 👥 User clustering
+- 📊 Time-series analysis
+- 🤖 Machine learning
+- 📡 Real electricity measurement through IoT
+- 🔄 Adaptation to changing consumption patterns
 
 «Electricity consumption is not merely a numerical signal; it is a reflection of consumer behavior.»
 
 ---
 
-🎯 Project Vision & Goal
+🎯 Project Goal
 
 We do not want this system to remain only a research idea.
 
-The goal is to develop a real, low-cost, locally developed electricity monitoring and forecasting system that can use real electricity measurements and operate in practical environments.
+The goal is to develop a real, low-cost, locally developed system for electricity measurement, analysis, and forecasting.
 
-The current focus is on completing and integrating the core components:
+The project is simultaneously developing the algorithm, forecasting pipeline, measurement layer, and system integration so that the path from research to a usable system remains short.
 
-Component| Goal
-🧠 Adaptive Segmentation| Develop and evaluate behavior-aware segmentation
-🤖 Forecasting| Improve and evaluate forecasting models
-👥 User Clustering| Extract behavioral patterns
-📡 Real Measurement| Develop low-cost measurement hardware
-💻 Software System| Integrate the system components
-🚀 Product| Prepare the system for real-world use
-
-Project Path
+Development Path
 
 Research & Algorithm
-        │
-        ▼
-Benchmark & Validation
-        │
-        ▼
+        ↓
+Real-Data Validation
+        ↓
 Integrated Prototype
-        │
-        ▼
+        ↓
 Low-Cost Product
 
-The project is therefore not positioned as a long sequence of distant stages. The algorithm, software, forecasting pipeline, and measurement prototype are being developed together toward a usable product.
+The project is not positioned as a distant product concept. Its core algorithmic, forecasting, software, and measurement components are already being developed and integrated.
 
 ---
 
 🧠 Behavior-Aware Adaptive Segmentation
 
-The Core Problem
+The Problem
 
 One of the first ideas that naturally comes to mind when segmenting electricity consumption is reducing within-segment variance.
 
-Conceptually, this is related to methods such as Fisher–Jenks Natural Breaks.
+This is conceptually related to approaches such as Fisher–Jenks Natural Breaks.
 
-Jenks divides the 24-hour profile into four contiguous sections while minimizing within-segment dispersion, with boundaries computed and then kept fixed.
+Jenks divides a 24-hour profile into four contiguous sections while minimizing within-segment dispersion, with boundaries computed once and then kept fixed.
 
-However, that was not sufficient for our objective.
+However, this was not sufficient for our objective.
 
 We did not want the system to answer only:
 
 «Where is the variance lower?»
 
-We wanted it to investigate:
+We wanted to investigate:
 
-«Where does consumer behavior actually change, and is that change persistent and meaningful?»
+«Where does consumer behavior actually change, and is that change persistent and repeatable?»
 
-Therefore, the project moved from a purely variance-oriented approach toward an adaptive, behavior-aware approach.
+Therefore, the project moved from a purely variance-oriented approach toward an adaptive, behavior-aware segmentation approach.
 
 ---
 
-🔄 Adaptive Segmentation Pipeline
+🔄 Adaptive Segmentation
 
-For each day, the system uses the previous 30-day window and recomputes the segmentation boundaries daily.
+For each day, only the previous 30 days are used.
 
-Step| Operation
-1| Build hourly consumption profile
-2| Apply Weighted Median
-3| Give more weight to recent days
-4| Smooth the profile
-5| Detect behavioral changes
-6| Evaluate change strength
-7| Evaluate persistence
-8| Apply segment-length constraints
-9| Generate four contiguous segments
-10| Recompute boundaries daily
+Previous 30 Days
+       ↓
+Weighted Median
+       ↓
+Hourly Behavioral Profile
+       ↓
+Smoothing
+       ↓
+Change Analysis
+       ↓
+Persistence Evaluation
+       ↓
+Segment Constraints
+       ↓
+4 Contiguous Segments
 
 Current Parameters
 
 Parameter| Value
 Number of segments| 4
-Minimum segment length| 4 hours
-Maximum segment length| 7 hours
+Minimum length| 4 hours
+Maximum length| 7 hours
 Historical window| 30 days
 Boundary update| Daily
 
+The segmentation boundaries are recomputed daily based on recent user behavior.
+
 ---
 
-📐 Behavioral Profile
+📐 Recent-Behavior Weighting
 
 Recent observations receive higher importance using:
 
-[
-w \propto 0.97^{age}
-]
+w ∝ 0.97^age
 
-Input| Processing| Output
-Historical data| Temporal weighting| Weighted data
-Weighted data| Weighted Median| Hourly profile
-Hourly profile| Smoothing| Stable profile
-Profile| Change Analysis| Behavioral changes
-Changes| Constraints| Segment boundaries
+The objective is to balance:
 
-The goal is to balance responsiveness to recent behavior with robustness against noise and isolated abnormal observations.
+- responsiveness to recent behavioral changes
+- robustness against noise and isolated observations
 
 ---
 
 📊 Dataset & Evaluation
+
+The current benchmark uses real-world Smart Meter London data.
 
 Property| Value
 Dataset| Smart Meter London
@@ -633,35 +664,35 @@ Period| December 2012 – December 2013
 Split| Temporal
 Training| 80%
 Testing| 20%
-Forecast Horizons| Day 1 / Day 2 / Day 3
-Forecast Strategy| Direct Forecasting
+Horizons| Day 1 / Day 2 / Day 3
+Strategy| Direct Forecasting
 
-The benchmark uses a chronological split, with the final 20% of the timeline reserved for testing.
+The final 20% of the timeline is reserved for testing.
 
 Why 80/20?
 
-Split| Share| Purpose
-Training| 80%| Model training
-Testing| 20%| Future-data evaluation
+PAST                                      FUTURE
 
-A temporal split is used instead of a random split because the forecasting model should learn from the past and be evaluated on future observations.
+|------------- 80% -------------|---- 20% ---->
+          Training                    Test
+
+A random shuffle is not used because forecasting models should learn from past observations and be evaluated on future observations.
 
 ---
 
-🤖 Forecasting Model
+🤖 Forecasting
 
 Random Forest
 
 The current benchmark uses a global Random Forest with the segmentation methods being compared.
 
-Property| Value
-Primary model| Random Forest
-Horizon 1| Day 1
-Horizon 2| Day 2
-Horizon 3| Day 3
-Strategy| Direct Forecasting
+Evaluated horizons:
 
-Based on the benchmark results, Random Forest is retained as the primary forecasting model.
+- Day 1
+- Day 2
+- Day 3
+
+Random Forest is currently retained as the primary forecasting model.
 
 ---
 
@@ -674,24 +705,37 @@ Day 1| 18.31%| 18.34%| 0.856| 0.857| 25.28%
 Day 2| 20.28%| 20.26%| 0.782| 0.774| 25.31%
 Day 3| 21.36%| 21.36%| 0.605| 0.692| 25.42%
 
-The benchmark shows very similar WAPE values between the two segmentation approaches. The project analysis focuses on the additional behavioral and stability characteristics of adaptive segmentation rather than claiming universal superiority.
+The WAPE values are very close between the two segmentation methods for the evaluated horizons.
+
+The project therefore does not claim universal superiority across every metric. The focus is on evaluating whether adaptive, behavior-aware segmentation can maintain competitive forecasting performance while providing a dynamic behavioral representation.
+
+More Challenging Devices
+
+Horizon| Adaptive WAPE| Jenks WAPE| Adaptive R²| Jenks R²
+Day 1| 24.64%| 23.73%| 0.837| 0.870
+Day 2| 32.08%| 31.16%| 0.482| 0.418
+Day 3| 37.21%| 33.95%| 0.824| -0.023
+
+These results concern outlier devices or devices with shorter histories.
 
 ---
 
 👥 User Clustering
 
-User clustering was added following the evaluation process and compared with the non-clustered approach.
+User behavior is also analyzed through clustering.
 
-Current Results
+Current results:
 
-Metric| Value
-Clustered devices| 948
-Outlier devices| 52
-Number of clusters| K = 2
+- 948 clustered devices
+- 52 outlier devices
+- 2 main clusters
 
-Cluster| Devices| Approx. WAPE
-Regular| 626| 15%–17%
-High-variance| 321| 24%–28%
+The reported groups are:
+
+- 🟢 Regular: 626 devices
+- 🟠 High-variance: 321 devices
+
+Approximate WAPE ranges are 15–17% for the regular group and 24–28% for the high-variance group.
 
 ---
 
@@ -701,82 +745,102 @@ The effect of clustering depends on the forecasting algorithm.
 
 Model| Day 1| Day 2| Day 3
 Ridge| +79.8%| +66.0%| +31.2%
-Random Forest| −1.1%| −1.2%| −0.8%
+Random Forest| -1.1%| -1.2%| -0.8%
 
-The reported results show that clustering does not affect all forecasting algorithms in the same way.
+The results show that clustering does not have the same effect across forecasting algorithms.
+
+Clustering therefore remains an analytical and extensible component of the system.
 
 ---
 
 🏗️ System Architecture
 
-Layer| Function
-📥 Data| Consumption data
-🧹 Preprocessing| Data preparation
-🧠 Adaptive Segmentation| Behavioral structure
-👥 User Clustering| User grouping
-📊 Feature Engineering| Feature extraction
-🤖 Random Forest| Forecasting
-📈 Evaluation| Performance evaluation
-
-Main Pipeline
-
-Data
-  ↓
-Preprocessing
-  ↓
-Adaptive Segmentation
-  ↓
-Feature Engineering
-  ↓
-Random Forest
-  ↓
-Consumption Forecast
-
-Behavioral Analysis
-
-Adaptive Segmentation
-        ├── Behavioral Profile
-        └── User Clustering
+                 ┌─────────────────┐
+                 │  Electricity    │
+                 │      Data       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ Preprocessing   │
+                 └────────┬────────┘
+                          │
+                          ▼
+              ┌───────────────────────┐
+              │ Adaptive Segmentation │
+              └───────────┬───────────┘
+                          │
+                 ┌────────┴────────┐
+                 │                 │
+                 ▼                 ▼
+          User Clustering    Feature Engineering
+                 │                 │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │  Random Forest  │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ Consumption     │
+                 │   Forecast      │
+                 └─────────────────┘
 
 ---
 
 📡 Low-Cost Hardware Prototype
 
-Component| Role
-ESP32| Processing and communication
-CT Clamp| Current measurement
-B101ZMPT| Voltage measurement
-Wi-Fi| Data transmission
+The project also includes a real electricity measurement prototype.
 
-The updated hardware measures voltage and current simultaneously, allowing real power, apparent power, and power factor to be calculated.
+Main Components
 
----
+- ESP32
+- CT Clamp
+- B101ZMPT
+- Wi-Fi
 
-⚡ Electricity Measurement
+The updated hardware samples voltage and current simultaneously, enabling calculation of:
 
-Measurements
+- RMS Voltage
+- RMS Current
+- Real Power
+- Apparent Power
+- Power Factor
 
-Parameter| Output
-RMS Voltage| "Vrms"
-RMS Current| "Irms"
-Real Power| "W"
-Apparent Power| "VA"
-Power Factor| "PF"
-
-The initial prototype assumed approximately 230 V. The updated version adds the B101ZMPT voltage sensor and samples voltage and current simultaneously.
+The B101ZMPT was added to address the previous fixed-voltage assumption.
 
 ---
 
-📡 Hardware Data Flow
+⚡ Measurement Pipeline
 
-Stage| Component| Output
-1| ⚡ Electrical Grid| Electrical signal
-2| CT Clamp| Current
-3| B101ZMPT| Voltage
-4| ESP32| Local processing
-5| Wi-Fi| Data transmission
-6| Server| Data reception
-7| AI / Forecasting| Analysis and prediction
+Electricity Grid
+       │
+       ├──────────────┐
+       ▼              ▼
+   CT Clamp       B101ZMPT
+    Current         Voltage
+       │              │
+       └──────┬───────┘
+              ▼
+            ESP32
+              │
+              ▼
+        Local Processing
+              │
+              ▼
+             Wi-Fi
+              │
+              ▼
+            Server
+              │
+              ▼
+       AI / Forecasting
+
+The system calculates voltage, current, real power, apparent power, and power factor.
+
+The current prototype sends a measurement package to the server every 10 seconds.
 
 Example Payload
 
@@ -788,51 +852,69 @@ Example Payload
   "power_factor": 0.976
 }
 
-The current firmware sends a measurement package to the server every 10 seconds.
+---
+
+🔧 Hardware Update
+
+The initial prototype approximately assumed a 230 V supply.
+
+The updated version:
+
+- adds the B101ZMPT voltage sensor
+- measures actual voltage
+- samples voltage and current together
+- calculates real power
+- calculates apparent power
+- calculates power factor
+
+This change addresses the limitation of treating grid voltage as a fixed value.
 
 ---
 
 🎯 Research → Product
 
-The project follows a Research-to-Product approach with a deliberately short path toward practical deployment.
+The project follows a Research-to-Product approach.
 
-Stage| Focus
-🔬 Research| Develop the methodology
-🧪 Benchmark| Validate using real data
-🔧 Prototype| Complete the working system
-🚀 Product| Integrate and deploy
+Research
+   ↓
+Benchmark
+   ↓
+Integrated Prototype
+   ↓
+Low-Cost Product
+
+The focus is on completing and integrating the existing components, rather than creating a long sequence of distant stages.
 
 Final Objective
 
-A smart, low-cost, locally developed system for electricity measurement, analysis, and forecasting.
-
-Research is not treated as a separate destination; it directly supports the completion and improvement of the practical system.
+«A smart, low-cost, locally developed system for electricity measurement, analysis, and forecasting.»
 
 ---
 
 🛣️ Roadmap
 
-⚡ Forecasting
+Forecasting
 
-- [ ] Improve Day-1 forecasting
-- [ ] Develop specialized Day-2 and Day-3 models
+- [ ] Improve Day-1 accuracy
+- [ ] Develop a dedicated Day-2 model
+- [ ] Develop a dedicated Day-3 model
 - [ ] Compare additional forecasting algorithms
-- [ ] Compare Direct and Horizon-Specific Forecasting
+- [ ] Evaluate horizon-specific forecasting
 
-🧠 Adaptive Segmentation
+Adaptive Segmentation
 
 - [ ] Improve behavioral change detection
-- [ ] Investigate persistence measures
+- [ ] Improve persistence measurement
 - [ ] Study seasonal behavior
 - [ ] Investigate adaptive segment counts
 
-👥 Clustering
+Clustering
 
 - [ ] Evaluate additional clustering methods
 - [ ] Improve volatile-user detection
 - [ ] Develop specialized behavioral models
 
-📡 Hardware
+Hardware
 
 - [ ] Improve calibration
 - [ ] Validate against reference instruments
@@ -840,11 +922,11 @@ Research is not treated as a separate destination; it directly supports the comp
 - [ ] Improve physical design
 - [ ] Reduce production cost
 
-🚀 Product Integration
+Product
 
 - [ ] Complete hardware–forecasting integration
 - [ ] Develop monitoring dashboard
-- [ ] Connect backend and measurement device
+- [ ] Complete backend integration
 - [ ] Conduct field testing
 - [ ] Prepare a usable product version
 
@@ -852,13 +934,18 @@ Research is not treated as a separate destination; it directly supports the comp
 
 ⚠️ Current Limitations
 
-Limitation| Description
-User behavior| Consumption patterns vary between users
-Volatile users| More difficult to forecast
-Day 2 / Day 3| Requires further development
-Clustering| Effect depends on forecasting model
-Hardware| Requires calibration and validation
-Dataset| Does not cover every possible consumption pattern
+The project is under active development.
+
+Current limitations include:
+
+- Consumption behavior varies between users.
+- Highly volatile users are more difficult to forecast.
+- Day 2 and Day 3 require further development.
+- The effect of clustering depends on the forecasting model.
+- Hardware requires calibration and validation.
+- The benchmark dataset does not represent every possible consumption pattern.
+
+These limitations are part of the current research and development process.
 
 ---
 
@@ -866,22 +953,17 @@ Dataset| Does not cover every possible consumption pattern
 
 «"Do not optimize only what is easy to measure; model what actually matters."»
 
-Variance is an important statistical measure, but variance alone does not necessarily describe consumer behavior.
+Variance is useful, but variance alone does not necessarily describe consumer behavior.
 
 The project therefore combines:
 
-Domain| Role
-Statistics| Measure dispersion
-Behavior| Understand consumption
-Adaptation| Respond to changes
-Machine Learning| Forecast consumption
-IoT| Measure real electricity
+Statistics + Behavior + Adaptation + Machine Learning + Real Measurement
+
+to build an electricity-intelligence system.
 
 ---
 
 📚 Dataset
-
-Benchmark dataset:
 
 Smart Meter Energy Consumption Data in London Households
 
@@ -889,7 +971,7 @@ Source:
 
 https://data.london.gov.uk/dataset/smartmeter-energy-consumption-data-in-london-households-vqm0d
 
-Dataset usage remains subject to the terms and license of the original data source.
+Dataset usage remains subject to the terms and license of the original source.
 
 ---
 
@@ -899,18 +981,20 @@ Jupiter Code — Aparat
 
 https://www.aparat.com/jupyter_code
 
+A project demonstration with visual benchmark comparisons is available through the project channel.
+
 ---
 
 📜 Citation
 
-If substantial parts of this project are used in research, publications, presentations, competitions, academic projects, or derivative works, please provide attribution:
+If substantial parts of this project are used in research, publications, presentations, competitions, academic projects, or derivative projects, please provide attribution:
 
 «Smart Electricity Consumption Prediction System
 Jupiter Code / Mohammad Mahdi Vafri»
 
 ---
 
-⚖️ Copyright / License
+⚖️ Copyright & License
 
 Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri
 
@@ -918,15 +1002,20 @@ This project is released under:
 
 Jupiter Code Non-Commercial License v1.1
 
-Usage| Status
-Personal| ✅ Permitted under the License
-Educational| ✅ Permitted under the License
-Academic| ✅ Permitted under the License
-Scientific| ✅ Permitted under the License
-Research| ✅ Permitted under the License
-Commercial| ⚠️ Requires written permission
+Permitted Non-Commercial Use
 
-Commercial use includes, but is not limited to:
+- Personal use
+- Educational use
+- Academic use
+- Scientific use
+- Research use
+- Other permitted non-commercial use under the License
+
+Commercial Use
+
+Commercial use requires prior written permission from the Copyright Holder, unless separately authorized under a commercial license.
+
+This includes, but is not limited to:
 
 - Commercial products
 - Paid services
@@ -949,7 +1038,7 @@ Jupiter Code Team
 
 Smart Electricity Consumption Prediction System
 
-© 2026 Jupiter Code / Mohammad Mahdi Vafri
+Copyright © 2026 Jupiter Code / Mohammad Mahdi Vafri
 
 ---
 
