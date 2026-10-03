@@ -1,0 +1,10 @@
+horizon,algo,seg_method,WAPE_gain_%,CI95_lo,CI95_hi,model_global,model_cluster
+1,random_forest,jenks,-0.9902155216721406,-1.989607609033745,-0.29906674165372793,RandomForest-Global,RandomForest-Cluster
+2,random_forest,jenks,-1.1850486531141255,-2.814566867678408,0.1299557069645973,RandomForest-Global,RandomForest-Cluster
+3,random_forest,jenks,-1.4966544373431527,-3.398202618898875,-0.04522050273402589,RandomForest-Global,RandomForest-Cluster
+1,ridge,adaptive,31.180223479835284,27.54758812709812,34.80137408999506,Ridge-Global,Ridge-Cluster
+1,random_forest,adaptive,-0.7722150978526648,-1.4744837034634006,-0.15333366579681437,RandomForest-Global,RandomForest-Cluster
+2,ridge,adaptive,65.99388620825567,63.39826717257453,68.41620789609782,Ridge-Global,Ridge-Cluster
+2,random_forest,adaptive,-1.180781099323268,-2.0706154911855115,-0.4844584741543256,RandomForest-Global,RandomForest-Cluster
+3,ridge,adaptive,79.7500685977625,77.32568396167227,82.030797132857,Ridge-Global,Ridge-Cluster
+3,random_forest,adaptive,-1.1229522375181236,-2.2790329547085073,-0.20707913246858153,RandomForest-Global,RandomForest-Cluster

@@ -1,0 +1,166 @@
+==============================================================================
+FORECAST BENCHMARK
+  Jenks vs Adaptive: RandomForest (shared algorithm)
+  Algorithm test: Ridge vs RandomForest on Adaptive only
+  Clusters are always listed separately (never averaged) in the tables.
+==============================================================================
+adaptive segmentation source: pre-built CSV: benchmark_results_project\daily_adaptive.csv (how it was segmented is not verified by the benchmark)
+data: {"jenks": {"n_rows": 395968, "n_devices": 1000, "date_min": "2012-12-01", "date_max": "2013-12-31", "calendar_gaps": 32}, "adaptive": {"n_rows": 365968, "n_devices": 1000, "date_min": "2012-12-31", "date_max": "2013-12-31", "calendar_gaps": 30}}
+split: {"jenks": {"cutoff": "2013-10-16", "test_frac": 0.2, "cluster_info": {"source": "cluster_modeling.fit_clusterer -> UserClusterer", "train_cutoff": "2013-10-16 00:00:00", "min_days": 21, "k": 2, "sizes": [329, 615], "devices_unassigned": 56, "n_clustered_candidates": 1000, "n_outliers": 56}, "seg_method": "jenks", "n_feat": 31}, "adaptive": {"cutoff": "2013-10-22", "test_frac": 0.2, "cluster_info": {"source": "cluster_modeling.fit_clusterer -> UserClusterer", "train_cutoff": "2013-10-22 00:00:00", "min_days": 21, "k": 2, "sizes": [321, 626], "devices_unassigned": 53, "n_clustered_candidates": 999, "n_outliers": 52}, "seg_method": "adaptive", "n_feat": 31}, "n_common_devices": 1000}
+
+============================================================
+1) JENKS vs ADAPTIVE (Global models, all test rows)
+============================================================
+Target identical across arms; only segment-derived features differ.
+
+WAPE/MAE: negative diff = Adaptive better.  R2: positive diff = Adaptive better.
+ horizon               model  WAPE_jenks  WAPE_adaptive  WAPE_diff(adaptive-jenks)  MAE_jenks  MAE_adaptive  MAE_diff(adaptive-jenks)  R2_jenks  R2_adaptive  R2_diff(adaptive-jenks)
+       1 RandomForest-Global     18.3091        18.3410                     0.0320     2.0450        2.0717                    0.0268    0.8560       0.8572                   0.0012
+       2 RandomForest-Global     20.2834        20.2628                    -0.0206     2.2721        2.2968                    0.0247    0.7823       0.7744                  -0.0079
+       3 RandomForest-Global     21.3624        21.3601                    -0.0023     2.3998        2.4293                    0.0295    0.6046       0.6922                   0.0876
+
+============================================================
+2) [jenks] Global / Naive models - all test rows
+============================================================
+--- [jenks] WAPE_% ---
+                     Day+1  Day+2  Day+3   mean
+model                                          
+RandomForest-Global  18.31  20.28  21.36  19.98
+Naive(t-7)           25.32  25.38  25.47  25.39
+
+--- [jenks] MAE ---
+                     Day+1  Day+2  Day+3   mean
+model                                          
+RandomForest-Global  2.045  2.272  2.400  2.239
+Naive(t-7)           2.828  2.843  2.861  2.844
+
+--- [jenks] R2 ---
+                      Day+1   Day+2   Day+3    mean
+model                                              
+RandomForest-Global  0.8560  0.7823  0.6046  0.7476
+Naive(t-7)           0.7086  0.7070  0.7049  0.7069
+
+============================================================
+2) [adaptive] Global / Naive models - all test rows
+============================================================
+--- [adaptive] WAPE_% ---
+                     Day+1   Day+2   Day+3    mean
+model                                             
+RandomForest-Global  18.34   20.26   21.36   19.99
+Naive(t-7)           25.28   25.31   25.42   25.33
+Ridge-Global         53.89  154.02  440.64  216.18
+
+--- [adaptive] MAE ---
+                     Day+1   Day+2   Day+3    mean
+model                                             
+RandomForest-Global  2.072   2.297   2.429   2.266
+Naive(t-7)           2.855   2.869   2.891   2.871
+Ridge-Global         6.087  17.458  50.113  24.553
+
+--- [adaptive] R2 ---
+                      Day+1   Day+2    Day+3     mean
+model                                                
+RandomForest-Global  0.8572  0.7744   0.6922   0.7746
+Naive(t-7)           0.7101  0.7095   0.7075   0.7090
+Ridge-Global        -0.1163 -8.5279 -78.9877 -29.2106
+
+============================================================
+3) [jenks] PER-CLUSTER results (each cluster separate)
+============================================================
+cluster_info: {"source": "cluster_modeling.fit_clusterer -> UserClusterer", "train_cutoff": "2013-10-16 00:00:00", "min_days": 21, "k": 2, "sizes": [329, 615], "devices_unassigned": 56, "n_clustered_candidates": 1000, "n_outliers": 56}
+Global-* = global model evaluated on this cluster's devices;
+Cluster-* = that cluster's own model on the same rows.
+'Unclustered' = outlier / short-history devices (served by the Global model).
+
+--- [jenks] WAPE_% per cluster ---
+        algo     cluster  n_devices  Cluster-Day+1  Cluster-Day+2  Cluster-Day+3  Global-Day+1  Global-Day+2  Global-Day+3
+RandomForest Unclustered         54          24.64          32.08          37.21         24.64         32.08         37.21
+RandomForest   Cluster 1        329          24.58          27.64          29.26         24.07         26.69         28.02
+RandomForest   Cluster 2        615          14.93          15.93          16.45         14.89         16.01         16.55
+
+--- [jenks] MAE per cluster ---
+        algo     cluster  n_devices  Cluster-Day+1  Cluster-Day+2  Cluster-Day+3  Global-Day+1  Global-Day+2  Global-Day+3
+RandomForest Unclustered         54          3.174          4.168          4.877         3.174         4.168         4.877
+RandomForest   Cluster 1        329          2.555          2.882          3.063         2.502         2.783         2.933
+RandomForest   Cluster 2        615          1.708          1.825          1.889         1.703         1.835         1.900
+
+--- [jenks] R2 per cluster ---
+        algo     cluster  n_devices  Cluster-Day+1  Cluster-Day+2  Cluster-Day+3  Global-Day+1  Global-Day+2  Global-Day+3
+RandomForest Unclustered         54         0.8370         0.4820        -0.8241        0.8370        0.4820       -0.8241
+RandomForest   Cluster 1        329         0.7969         0.7364         0.6820        0.8123        0.7636        0.7316
+RandomForest   Cluster 2        615         0.8905         0.8704         0.8593        0.8915        0.8670        0.8562
+
+============================================================
+3) [adaptive] PER-CLUSTER results (each cluster separate)
+============================================================
+cluster_info: {"source": "cluster_modeling.fit_clusterer -> UserClusterer", "train_cutoff": "2013-10-22 00:00:00", "min_days": 21, "k": 2, "sizes": [321, 626], "devices_unassigned": 53, "n_clustered_candidates": 999, "n_outliers": 52}
+Global-* = global model evaluated on this cluster's devices;
+Cluster-* = that cluster's own model on the same rows.
+'Unclustered' = outlier / short-history devices (served by the Global model).
+
+--- [adaptive] WAPE_% per cluster ---
+        algo     cluster  n_devices  Cluster-Day+1  Cluster-Day+2  Cluster-Day+3  Global-Day+1  Global-Day+2  Global-Day+3
+RandomForest Unclustered         51          23.73          31.16          33.95         23.73         31.16         33.95
+RandomForest   Cluster 1        626          15.20          16.29          16.88         15.15         16.25         16.92
+RandomForest   Cluster 2        321          24.15          27.00          28.77         23.80         26.30         27.92
+       Ridge Unclustered         51          69.32         191.06         553.76         69.32        191.06        553.76
+       Ridge   Cluster 1        626          15.69          16.82          17.22         46.51        130.98        372.52
+       Ridge   Cluster 2        321          74.41          97.85         145.23         65.93        193.62        556.61
+
+--- [adaptive] MAE per cluster ---
+        algo     cluster  n_devices  Cluster-Day+1  Cluster-Day+2  Cluster-Day+3  Global-Day+1  Global-Day+2  Global-Day+3
+RandomForest Unclustered         51          3.152          4.185          4.604         3.152         4.185         4.604
+RandomForest   Cluster 1        626          1.725          1.852          1.924         1.719         1.848         1.928
+RandomForest   Cluster 2        321          2.629          2.952          3.160         2.591         2.876         3.066
+       Ridge Unclustered         51          9.208         25.659         75.097         9.208        25.659        75.097
+       Ridge   Cluster 1        626          1.780          1.912          1.962         5.277        14.897        42.461
+       Ridge   Cluster 2        321          8.100         10.698         15.949         7.177        21.168        61.123
+
+--- [adaptive] R2 per cluster ---
+        algo     cluster  n_devices  Cluster-Day+1  Cluster-Day+2  Cluster-Day+3  Global-Day+1  Global-Day+2  Global-Day+3
+RandomForest Unclustered         51         0.8696         0.4182         0.0228        0.8696        0.4182        0.0228
+RandomForest   Cluster 1        626         0.8745         0.8463         0.8281        0.8777        0.8497        0.8268
+RandomForest   Cluster 2        321         0.8161         0.7643         0.7108        0.8228        0.7870        0.7281
+       Ridge Unclustered         51        -0.0556        -7.3773       -71.5848       -0.0556       -7.3773      -71.5848
+       Ridge   Cluster 1        626         0.8743         0.8434         0.8292       -0.0295       -7.3884      -68.9625
+       Ridge   Cluster 2        321        -0.6403        -1.9654        -5.4652       -0.2683      -10.5981      -96.1944
+
+============================================================
+4) ALGORITHM TEST on Adaptive: RandomForest vs Ridge
+============================================================
+A_better_% = WAPE reduction of A relative to B (positive = A better), paired
+device-clustered bootstrap 95% CI. significant = CI excludes 0.
+
+seg_method  horizon    mode            A     B  WAPE_A  WAPE_B  A_better_%  CI95_lo  CI95_hi  significant
+  adaptive        1  Global RandomForest Ridge  18.341  53.887      65.964   65.228   66.714         True
+  adaptive        1 Cluster RandomForest Ridge  18.483  37.085      50.161   47.454   52.740         True
+  adaptive        2  Global RandomForest Ridge  20.263 154.020      86.844   86.445   87.124         True
+  adaptive        2 Cluster RandomForest Ridge  20.502  52.376      60.856   57.890   63.696         True
+  adaptive        3  Global RandomForest Ridge  21.360 440.641      95.152   94.994   95.279         True
+  adaptive        3 Cluster RandomForest Ridge  21.600  89.229      75.793   72.742   78.405         True
+
+--- Cluster vs Global: WAPE improvement % (overall, 95% device-clustered bootstrap) ---
+ horizon          algo seg_method  WAPE_gain_%  CI95_lo  CI95_hi        model_global        model_cluster
+       1 random_forest      jenks       -0.990   -1.990   -0.299 RandomForest-Global RandomForest-Cluster
+       2 random_forest      jenks       -1.185   -2.815    0.130 RandomForest-Global RandomForest-Cluster
+       3 random_forest      jenks       -1.497   -3.398   -0.045 RandomForest-Global RandomForest-Cluster
+       1         ridge   adaptive       31.180   27.548   34.801        Ridge-Global        Ridge-Cluster
+       1 random_forest   adaptive       -0.772   -1.474   -0.153 RandomForest-Global RandomForest-Cluster
+       2         ridge   adaptive       65.994   63.398   68.416        Ridge-Global        Ridge-Cluster
+       2 random_forest   adaptive       -1.181   -2.071   -0.484 RandomForest-Global RandomForest-Cluster
+       3         ridge   adaptive       79.750   77.326   82.031        Ridge-Global        Ridge-Cluster
+       3 random_forest   adaptive       -1.123   -2.279   -0.207 RandomForest-Global RandomForest-Cluster
+
+Notes:
+  * WAPE = sum|error| / sum|actual| (main metric).
+  * Naive(t-7) = same weekday last week; reference only.
+  * Multi-day horizons use DIRECT strategy (no recursive feedback).
+  * Ridge runs on Adaptive only. ExtraTrees removed.
+  * Cluster numbers are 1-based and arbitrary: 'Cluster 1' of Jenks is NOT 'Cluster 1' of Adaptive.
+  * Segment columns are FEATURES only; no segment prediction scores are shown.
+
+WARNINGS:
+  - 32 calendar gaps; origins whose lag window/target day touches a gap are dropped.
+  - 30 calendar gaps; origins whose lag window/target day touches a gap are dropped.
+
+Charts: seg_compare_wape.png, seg_compare_mae.png, seg_compare_r2.png, adaptive_algos_wape.png, adaptive_algos_mae.png, adaptive_algos_r2.png, cluster_vs_global_gain.png, per_cluster_jenks_unclustered.png, per_cluster_jenks_cluster1.png, per_cluster_jenks_cluster2.png, per_cluster_adaptive_unclustered.png, per_cluster_adaptive_cluster1.png, per_cluster_adaptive_cluster2.png
