@@ -497,11 +497,9 @@ Jupiter Code Non-Commercial License v1.1
 
 ---
 
-👨‍💻 توسعه‌دهنده
+👨‍💻توسعه دهنده
 
-Mohammad Mahdi Vafri
-
-Jupiter Code
+Jupiter Code Team
 
 © 2026 Jupiter Code / Mohammad Mahdi Vafri
 
